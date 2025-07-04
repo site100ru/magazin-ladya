@@ -54,7 +54,7 @@
 
 		<div id="formBtn" class="callback-form-button" data-bs-toggle="tooltip" data-bs-placement="left"
 			data-bs-custom-class="custom-tooltip" data-bs-title="Перезвонить Вам?">
-			<a data-bs-toggle="modal" data-bs-target="#callbackModal">
+			<a type="button"  data-bs-toggle="modal" data-bs-target="#messageModal">
 				<div class="callback-form-button-ico"></div>
 			</a>
 		</div>
