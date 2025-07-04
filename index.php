@@ -1,11 +1,10 @@
 <?php
 	
-	/*
-		Template Name: Главная
-		Template Post Type: page
-	*/
+	/**
+	 * Template Name: Главная
+	 * Template Post Type: page
+	 */
 	
-	//include 'header.php';
 	session_start();
 	
 	if ( isset( $_SESSION['win'] ) ) {
