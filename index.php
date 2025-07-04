@@ -1,11 +1,11 @@
 <?php
 	
-	/**
-	 * Template Name: Главная
-	 * Template Post Type: page
-	 * 4
-	 */
+	/*
+		Template Name: Главная
+		Template Post Type: page
+	*/
 	
+	//include 'header.php';
 	session_start();
 	
 	if ( isset( $_SESSION['win'] ) ) {
@@ -14,6 +14,7 @@
 	} else $display = "none";
 	
 ?>
+
 <!doctype html>
 <html lang="ru">
 	<head>
@@ -285,6 +286,132 @@
 			</div>
 		</section>
 		<!-- /Order section -->
+		
+		
+		<!-- Portfolio --
+		<div id="portfolio-sp" class="scroll-point"></div>
+		<section class="slider-portfolio-section bg-white py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h2 class="text-darkbrown mb-1">Некоторые наши работы</h2>
+						<div class="title-line m-auto mb-5">
+							<div class="title-quadro" style="left: 0;"></div>
+							<div class="title-quadro" style="left: 25px;"></div>
+							<div class="title-quadro" style="right: 0px;"></div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-md-10 mb-5">
+								<div id="carousel-1" class="carousel slide" data-bs-ride="false"  data-bs-interval="false">
+									<div class="carousel-inner shadow rounded">
+										
+										<?php /*
+											$args = [
+												'taxonomy'      => [ 'cat-portfolio' ], // название таксономии с WP 4.5
+												/* Может быть много других параметров *
+											];
+											$terms = get_terms( $args );
+											$active = false;
+											foreach( $terms as $term ) { ?>
+												
+													
+														<?php
+															
+															$query = new WP_Query( array(
+																'tax_query' => array(
+																	array(
+																		'taxonomy' => 'cat-portfolio',
+																		'field'    => 'slug', // Поле, по которому ищем термин
+																		'terms'    => $term->slug
+																	)
+																)
+															) );
+																					
+															while ( $query->have_posts() ) { $query->the_post(); ?>
+																<div class="carousel-item<?php if ( $active == false ) { echo ' active'; $count = true; } ?>">
+																		
+																		<div class="approximation shadow rounded">
+																			<img data-src="<?php echo get_the_post_thumbnail_url(); ?>" loading="lazy">
+																			<!--div class="card-wrapper"><h3><?php the_title(); ?></h3></div-->
+																		</div>
+																	
+																</div>
+															<?php }
+														?>
+													
+												
+											<?php $active = true; }
+										?>
+										
+										
+										<?php /*
+											// 'title' => 'Разное' можно удалить, тогда портфолио будет показываться из разных разделов.
+											$query = new WP_Query( [ 'post_type' => 'portfolio'] );
+											
+											while ( $query->have_posts() ) { $query->the_post();
+												$images = get_post_gallery_images();
+												print_r($images);
+												
+												$count = false;
+												foreach ( $images as $image ) {
+													$image_id = attachment_url_to_postid( $image ); ?>
+													<div class="carousel-item <?php if ( $count == false ) { echo ' active'; $count = true; } ?>">
+														<div class="approximation">
+															<img src="<?php echo $image; ?>" class="d-block w-100" loading="lazy" alt="...">
+														</div>
+													</div>
+												<?php }
+											} */
+										?>
+										
+										
+										
+										
+										<!--div class="carousel-item active">
+											<!--a href="#" onClick="galleryOn('gallery-1','img-1-1');"--	
+												<div class="approximation">
+													<img data-src="<?php echo get_template_directory_uri(); ?>/img/portfolio/portfolio-1.jpg" class="d-block w-100" loading="lazy" alt="...">
+													<!--div class="magnifier"></div--
+												</div>
+											<!--/a--
+										</div>
+										<!--div class="carousel-item">
+											<!--a href="#" onClick="galleryOn('gallery-1','img-1-2');"--	
+												<div class="approximation">
+													<img data-src="<?php echo get_template_directory_uri(); ?>/img/portfolio/portfolio-2.jpg" class="d-block w-100" loading="lazy" alt="...">
+													<!--div class="magnifier"></div--
+												</div>
+											<!--/a--
+										</div>
+										<div class="carousel-item">
+											<!--a href="#" onClick="galleryOn('gallery-1','img-1-3');"--	
+												<div class="approximation">
+													<img data-src="<?php echo get_template_directory_uri(); ?>/img/portfolio/portfolio-3.jpg" class="d-block w-100" loading="lazy" alt="...">
+													<!--div class="magnifier"></div--
+												</div>
+											<!--/a--
+										</div--
+										
+										
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carousel-1"  data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carousel-1"  data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<a href="http://магазин-ладья.рф/наши-работы/" type="button" class="btn btn-lg btn-corporate-1 px-1">Смотреть все работы</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Portfolio -->
+		
 		
 		
 		<!-- SECTION PORTFOLIO --
