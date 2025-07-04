@@ -69,15 +69,15 @@
 						<li class="nav-item me-2">
 							<a href="tel:84912246429" id="top-menu-tel" class="nav-link"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/phone-ico.png" class="me-2">8 (4912) 24-64-29</a>
 						</li>
-						<!--li class="nav-item">
-							<a class="nav-link ico-button pe-0" href="whatsapp://send?phone=+79119548494"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.png"></a>
-						</li-->
-						<!--li class="nav-item">
-							<a class="nav-link ico-button pe-0" href="#"><img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.png"></a>
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="https://wa.me/79511004979?web=1&app_absent=1&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%AF%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-%D0%BB%D0%B0%D0%B4%D1%8C%D1%8F.%D1%80%D1%84"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.png"></a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="https://t.me/+79511004979?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%AF%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-%D0%BB%D0%B0%D0%B4%D1%8C%D1%8F.%D1%80%D1%84"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.png"></a>
+						</li>
+						<!-- <li class="nav-item">
 							<a class="nav-link ico-button pe-0" href="#"><img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/img/ico/inst-ico.png"></a>
-						</li-->
+						</li> -->
 						<li class="nav-item">
 							<a class="nav-link ico-button" href="https://vk.com/club90212067"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/vk-ico.png"></a>
 						</li>
@@ -125,9 +125,7 @@
 								?>
 							</ul>
 						</li>
-						<li class="nav-item d-none d-xl-inline">
-							<span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point-ico.png"></span>
-						</li>
+						
 						<li class="nav-item">
 							<a class="nav-link active" href="/наши-работы">Наши работы</a>
 						</li>
@@ -151,9 +149,9 @@
 							<a id="top-menu-tel" class="nav-link" href="tel:89511004979">8 (951) 100-49-79</a>
 						</li>
 						<li class="nav-item d-xl-none">
-							<!--a class="ico-button pe-2" href="whatsapp://send?phone=+79119548494"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.png"></a-->
-							<!--a class="ico-button pe-2" href="#"><img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.png"></a>
-							<a class="ico-button pe-2" href="#"><img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/img/ico/inst-ico.png"></a-->
+							<a class="ico-button pe-2" href="https://wa.me/79511004979?web=1&app_absent=1&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%AF%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-%D0%BB%D0%B0%D0%B4%D1%8C%D1%8F.%D1%80%D1%84"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.png"></a>
+							<a class="ico-button pe-2" href="https://t.me/+79511004979?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%AF%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-%D0%BB%D0%B0%D0%B4%D1%8C%D1%8F.%D1%80%D1%84"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.png"></a>
+							<!-- <a class="ico-button pe-2" href="#"><img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/img/ico/inst-ico.png"></a> -->
 							<a class="ico-button" href="https://vk.com/club90212067"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/vk-ico.png"></a>
 						</li>
 						<!-- End mobile menu -->
@@ -401,8 +399,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col py-2">
-							<div id="company-in-footer">©2023 Мебельный магазин «Ладья»</div>
-							<div id="im-in-footer">Создание и продвижение сайтов: <a href="https://сайт100.рф" class="text-light">сайт100.рф</a></div>
+							<div id="company-in-footer">©<?php echo date('Y'); ?> Мебельный магазин «Ладья»</div>
+							<div id="im-in-footer">Создание и продвижение сайтов: <a href="https://site100.ru" class="text-light">site100.ru</a></div>
 						</div>
 					</div>
 				</div>
