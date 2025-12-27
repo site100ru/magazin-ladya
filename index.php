@@ -21,7 +21,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="yandex-verification" content="794ea77bc93f2d22" />
 		<link rel="icon" href="https://xn----7sbabmjsi2adq8pnb.xn--p1ai/wp-content/uploads/favicon.png" type="image/x-icon">
-		<title>Мебельный магазин «Ладья» - Вся мебель в одном магазине!</title>
+		<title>Мебельный магазин «Ладья» - Вся мебель в одном магазине</title>
 		<!-- Bootstrap CSS -->
 		<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Style CSS -->
