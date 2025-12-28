@@ -15,11 +15,8 @@ jobs:
           username: ${{ secrets.REGRU_USER }}
           key: ${{ secrets.REGRU_KEY }}
           script: |
-            cd /var/www/u1538455/data/www/магазин-ладья.рф/wp-content/themes/ladya
-            git init
-            git remote add origin https://github.com/site100ru/magazin-ladya.git
-            git fetch origin
-            git checkout -B main origin/main
+            cd /var/www/u1538455/data/www/магазин-ладья.рф/wp-content/themes/magazin-ladya
+            git clone git@github.com:site100ru/magazin-ladya.git .
 
             # cd /var/www/u1538455/data/www/магазин-ладья.рф/wp-content/themes/ladya
             # git pull
