@@ -81,7 +81,7 @@
 										<div class="col-md-6 mb-5">
 											<a href="<?php echo get_term_link($term->term_id); ?>">
 												<div class="approximation shadow rounded">
-													<img data-src="<?php echo $thumbnail_url;; ?>" loading="lazy" style="height: 460px; width: 636px;">
+													<img data-src="<?php echo $thumbnail_url;; ?>" src="<?php echo $thumbnail_url;; ?>" loading="lazy" style="height: 460px; width: 636px;">
 													<div class="card-wrapper"><h2><?php echo $term->name;?></h2></div>
 												</div>
 											</a>
