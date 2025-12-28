@@ -1,10 +1,12 @@
 <?php
-session_start();
-if ( isset( $_SESSION['win'] ) ) {
-    unset( $_SESSION['win'] );
-    $display = "block";
-} else $display = "none";
-
+	
+	session_start();
+	
+	if ( isset( $_SESSION['win'] ) ) {
+		unset( $_SESSION['win'] );
+		$_SESSION['display'] = "block";
+	} else { $_SESSION['display'] = "none"; }
+	
 ?>
 
 

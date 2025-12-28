@@ -147,12 +147,14 @@
 <!-- /Message Modal -->
 
 <!-- Показываем сообщение об успешной отправки -->
-<div style="display: <?php echo $display; ?>;" onclick="modalClose();">
-    <div id="background-msg" style="display: <?php echo $display; ?>;"></div>
-    <button id="btn-close" type="button" class="btn-close btn-close-white" onclick="modalClose();" style="position: absolute; z-index: 9999; top: 15px; right: 15px;"></button>
-    <div id="message">
-        <?php echo $_SESSION['recaptcha']; unset($_SESSION['recaptcha']); ?>
-    </div> 
+<div style="display: <?php echo $_SESSION['display'] ?>;" onclick="modalClose();">
+	<div id="background-msg" style="display: <?php echo $_SESSION['display'] ?>;"></div>
+	<button id="btn-close" type="button" class="btn-close btn-close-white" onclick="modalClose();"
+		style="position: absolute; z-index: 9999; top: 15px; right: 15px;"></button>
+	<div id="message">
+		<?php echo $_SESSION['recaptcha'];
+		unset($_SESSION['recaptcha']); ?>
+	</div>
 </div>
 
 <!-- Bootstarp JS -->

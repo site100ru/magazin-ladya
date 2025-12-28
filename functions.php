@@ -246,6 +246,12 @@
     }
     /*** END ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
 
+    /*** ВКЛЮЧАЕМ EXCERPT FOR PAGES (ОПИСАНИЕ ДЛЯ СТРАНИЦ) ***/
+	add_action('init', 'add_excerpt_to_pages');
+	function add_excerpt_to_pages() {
+		add_post_type_support('page', 'excerpt');
+	}
+
     // КЛАССЫ В BODY_CLASS
 add_filter('body_class', 'custom_body_classes');
 
