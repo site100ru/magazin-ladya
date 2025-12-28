@@ -371,12 +371,12 @@ defined( 'ABSPATH' ) || exit;
 				<form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/order-mail.php">
 					<div class="row justify-content-end">
 						<div class="col-md-6">
-							<label class="form-label">Ваше имя</label>
-							<input type="text" name="name" class="form-control-corporate-2" id="exampleFormControlInput1" placeholder="">
+							<label for="exampleFormControlInput6" class="form-label">Ваше имя</label>
+							<input type="text" name="name" class="form-control-corporate-2" id="exampleFormControlInput-6" placeholder="">
 						</div>
 						<div class="col-md-6">
-							<label class="form-label">Ваш телефон*</label>
-							<input type="text" name="tel" class="form-control-corporate-2 telMask" id="exampleFormControlInput2" required>
+							<label for="exampleFormControlInput7" class="form-label">Ваш телефон*</label>
+							<input type="text" name="tel" class="form-control-corporate-2 telMask" id="exampleFormControlInput7" required>
 						</div>
 						<div class="col-md-6 mb-5 mb-md-0">
 							<button type="submit" class="d-block w-100 btn btn-lg btn-corporate-2">Записаться к дизайнеру</button>
@@ -926,12 +926,12 @@ defined( 'ABSPATH' ) || exit;
 						<form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/get_calculate_kitchen.php">
 							<div class="row justify-content-center">
 								<div class="col-md-4">
-									<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
-									<input type="text" class="form-control" id="exampleFormControlInput1" name="name">
+									<label for="exampleFormControlInput12" class="form-label">Ваше имя</label>
+									<input type="text" class="form-control" id="exampleFormControlInput12" name="name">
 								</div>
 								<div class="col-md-4">
-									<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
-									<input type="text" class="form-control telMask" id="exampleFormControlInput2" name="phone" required>
+									<label for="exampleFormControlInput112" class="form-label">Ваш телефон</label>
+									<input type="text" class="form-control telMask" id="exampleFormControlInput112" name="phone" required>
 								</div>
 							</div>
 							<div class="row">

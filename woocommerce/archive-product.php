@@ -327,13 +327,13 @@
 					<form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/order-mail.php">
 						<div class="row justify-content-end">
 							<div class="col-md-6">
-								<label class="form-label">Ваше имя</label>
-								<input type="text" name="name" class="form-control-corporate-2" id="exampleFormControlInput1"
+								<label for="exampleFormControlInput1116" class="form-label">Ваше имя</label>
+								<input type="text" name="name" class="form-control-corporate-2" id="exampleFormControlInput1116"
 									placeholder="">
 							</div>
 							<div class="col-md-6">
-								<label class="form-label">Ваш телефон*</label>
-								<input type="text" name="tel" class="form-control-corporate-2 telMask" id="exampleFormControlInput2"
+								<label for="exampleFormControlInput3216" class="form-label">Ваш телефон*</label>
+								<input type="text" name="tel" class="form-control-corporate-2 telMask" id="exampleFormControlInput3216"
 									required>
 							</div>
 							<div class="col-md-6 mb-5 mb-md-0">

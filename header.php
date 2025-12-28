@@ -28,7 +28,7 @@
         <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
         <meta property="og:title" content="<?php echo wp_get_document_title(); ?>" />
         
-        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/ico/favicon-light-1.svg" type="image/x-icon" id="favicon">
+        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/ico/favicon.png" type="image/x-icon" id="favicon">
 
         <!-- Bootstrap CSS -->
 		<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">

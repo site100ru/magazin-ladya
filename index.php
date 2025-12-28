@@ -108,8 +108,8 @@
 						<form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/order-mail.php">
 							<div class="row justify-content-end">
 								<div class="col-md-6">
-									<label class="form-label">Ваше имя</label>
-									<input type="text" name="name" class="form-control-corporate-2" id="exampleFormControlInput1" placeholder="">
+									<label for="exampleFormControlInput1-1" class="form-label">Ваше имя</label>
+									<input type="text" name="name" class="form-control-corporate-2" id="exampleFormControlInput1-1" placeholder="">
 								</div>
 								<div class="col-md-6">
 									<label class="form-label">Ваш телефон*</label>
@@ -1103,8 +1103,8 @@
 								<form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/get_calculate_kitchen.php">
 									<div class="row justify-content-center">
 										<div class="col-md-4">
-											<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
-											<input type="text" class="form-control" id="exampleFormControlInput1" name="name">
+											<label for="exampleFormControlInput1-2" class="form-label">Ваше имя</label>
+											<input type="text" class="form-control" id="exampleFormControlInput1-2" name="name">
 										</div>
 										<div class="col-md-4">
 											<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
@@ -1517,12 +1517,12 @@
 								<form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/get_calculate_closet.php">
 									<div class="row justify-content-center">
 										<div class="col-md-4">
-											<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
-											<input type="text" class="form-control" id="exampleFormControlInput1" name="name">
+											<label for="exampleFormControlInput1-3" class="form-label">Ваше имя</label>
+											<input type="text" class="form-control" id="exampleFormControlInput1-3" name="name">
 										</div>
 										<div class="col-md-4">
-											<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
-											<input type="text" class="form-control telMask" id="exampleFormControlInput2" name="phone" required>
+											<label for="exampleFormControlInput2-2" class="form-label">Ваш телефон</label>
+											<input type="text" class="form-control telMask" id="exampleFormControlInput2-2" name="phone" required>
 										</div>
 									</div>
 									<div class="row">
