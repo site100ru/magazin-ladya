@@ -15,8 +15,8 @@ jobs:
           username: ${{ secrets.REGRU_USER }}
           key: ${{ secrets.REGRU_KEY }}
           script: |
-            cd /var/www/u1538455/data/www/magazin-ladya/public_html/wp-content/themes
+            cd /var/www/u1538455/data/www/magazin-ladya/wp-content/themes
             git clone https://github.com/site100ru/magazin-ladya.git magazin-ladya
 
-            # cd /var/www/u1538455/data/www/magazin-ladya/public_html/wp-content/themes/magazin-ladya
+            # cd /var/www/u1538455/data/www/magazin-ladya/wp-content/themes/magazin-ladya
             # git pull
