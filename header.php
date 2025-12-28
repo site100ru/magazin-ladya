@@ -16,7 +16,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="yandex-verification" content="794ea77bc93f2d22" />
+		<!-- <meta name="yandex-verification" content="794ea77bc93f2d22" /> -->
 		<!-- Новый код верификации -->
 		<meta name="yandex-verification" content="fd44421075c75556" />
 
