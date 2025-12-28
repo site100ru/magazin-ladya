@@ -114,37 +114,6 @@
 </div>
 <!-- /Measurer Modal -->
 
-<!-- callbackModal Modal -->
-<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/callback-tel-mail.php" class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="callbackModalLabel">Обратный звонок</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col">
-                        <p><small>Оставьте Ваши контакты и дизайнер свяжется с Вами в ближайшее время.</small></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон*">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <input type="hidden" id="g-recaptcha-response-designer" name="g-recaptcha-response">
-                <button type="submit" class="btn btn-corporate-2 px-3 mx-auto">Записаться</button>
-            </div>
-        </form>
-    </div>
-</div>
-<!-- /callbackModal Modal -->
 
 
 <!-- Message Modal -->
@@ -454,7 +423,7 @@
 
     <div id="formBtn" class="callback-form-button" data-bs-toggle="tooltip" data-bs-placement="left"
         data-bs-custom-class="custom-tooltip" data-bs-title="Перезвонить Вам?">
-        <a data-bs-toggle="modal" data-bs-target="#callbackModal">
+        <a data-bs-toggle="modal" data-bs-target="#messageModal">
             <div class="callback-form-button-ico"></div>
         </a>
     </div>
