@@ -206,12 +206,14 @@
 </script>
 
 <!-- Загрузка изображений с приоритетом -->
-<!-- <script>
+<script>
     // Добавить в img атрибут data-src вместо src
     if ('loading' in HTMLImageElement.prototype) {
-        const images = document.querySelectorAll('img[loading="lazy"]');
+        const images = document.querySelectorAll('img[loading="lazy"][data-src]');
         images.forEach(img => {
-            img.src = img.dataset.src;
+            if (img.dataset.src) {  // Проверяем, что data-src существует
+                img.src = img.dataset.src;
+            }
         });
     } else {
         // Dynamically import the LazySizes library
@@ -220,7 +222,7 @@
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
         document.body.appendChild(script);
     }
-</script> -->
+</script>
 
 <!-- API Yandex Map -->
 <script src="https://api-maps.yandex.ru/2.1/?apikey=7a322092-0e89-4de6-8bff-0a1795b5548e&lang=ru_RU" type="text/javascript"></script>
