@@ -117,7 +117,7 @@
 <!-- callbackModal Modal -->
 <div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/callback-mail.php" class="modal-content">
+        <form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/callback-tel-mail.php" class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="callbackModalLabel">Обратный звонок</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
