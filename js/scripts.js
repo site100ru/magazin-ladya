@@ -1,32 +1,25 @@
 /* Функция "Прилипало" */
-onscroll = function prilipalo() {
-	var prokrutka = window.pageYOffset;
-	if ( window.screen.width >= 769 ) {
-		if ( prokrutka > 50 ) {
-			document.getElementById('top-menu-2').classList.add('fixed-top');
-			document.getElementById('top-menu-2').style.position = 'fixed';
-			document.getElementById('top-menu-2').style.top = 0;
-			document.getElementById('top-menu-2').style.background = 'rgb(0,0,0,.7)';
-			document.getElementById('top-menu-2').style.boxShadow = '5px 0px 5px 3px rgba(0,0,0,.25)';
-			document.getElementById('navbar-brand-img').style.height = '47px';
-		} else {
-			document.getElementById('top-menu-2').classList.remove('fixed-top');
-			document.getElementById('top-menu-2').style.position = 'absolute';
-			document.getElementById('top-menu-2').style.top = '59px';
-			document.getElementById('top-menu-2').style.background = 'none';
-			document.getElementById('top-menu-2').style.boxShadow = 'none';
-			document.getElementById('navbar-brand-img').style.height = '77px';
-		}
-	} else {
-		document.getElementById('top-menu-2').style.position = '';
-		document.getElementById('top-menu-2').style.top = 0;
-		document.getElementById('top-menu-2').classList.add('fixed-top');
-	}
-	
-	/* Убираем меню при прокрутке */
-	document.getElementById( 'navbarSupportedContent2' ).classList.remove('show');
-}
+function prilipalo() {
+    window.addEventListener('scroll', function() {
+        var prokrutka = window.pageYOffset;
+        var screenWidth = window.innerWidth;
+        const topMenu = document.getElementById('top-menu-2');
 
+        if (screenWidth >= 992) {
+            if (prokrutka > 57) {
+                topMenu.classList.add('fixed-top');
+                topMenu.style.position = 'fixed';
+                topMenu.classList.add('show');
+                topMenu.style.top = 0;
+            } else {
+                topMenu.classList.remove('fixed-top');
+                topMenu.style.position = 'absolute';
+                topMenu.classList.remove('show');
+                topMenu.style.top = '57px';
+            }
+        } 
+    });
+}
 
 /* Убираем сообщение об успешной отправки */
 function modalClose () {

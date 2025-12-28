@@ -155,9 +155,38 @@ p {
 	position: absolute;
 	width: 100%;
 	z-index: 999;
-	top: 59px;
-	transition: 0.25s;
+	top: 57px;
+    transition: height 0.3s ease;
 }
+
+#top-menu-2.show {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 0px 5px 3px;
+}
+
+#top-menu-2.show #navbar-brand-img {
+    height: 47px;
+}
+
+#top-menu-2 #navbar-brand-img {
+    height: 77px;
+    transition: height 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+	#top-menu-2 {
+		position: fixed;
+		width: 100%;
+		z-index: 999;
+		top: 0px;
+	}
+    #top-menu-2 #navbar-brand-img  {
+        height: 35px;
+    }
+
+}
+
+
 /*** END MENU ***/
 
 /*** CATALOGY ***/

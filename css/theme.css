@@ -877,6 +877,35 @@ header.second-header {
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 }
+
+.callback-max-button {
+	width: 50px;
+	height: 50px;
+	background: #fffd00;
+	border-radius: 50%;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-left: 10px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index: 1;
+	transition: 0.25s;
+}
+
+.callback-max-button:hover {
+	background: #eeee01;
+}
+
+.callback-max-button-ico {
+	width: 30px;
+	height: 30px;
+	background: url(../img/callback/callback-max-ico.svg) center no-repeat;
+	background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+}
 /*** END CALLBACK BUTTON ***/
 
 
@@ -885,3 +914,71 @@ header.second-header {
 }
 
 .test{}
+
+/*** NEW YEAR ***/
+a.custom-logo-link.new-year {
+    position: relative;
+}
+
+a.custom-logo-link.new-year:before {
+    content: '';
+    background: url(../img/new-year/new-year-cap.png) no-repeat;
+    width: 60px;
+    height: 63px;
+    z-index: 9999;
+    position: absolute;
+    background-size: contain;
+    left: -15px;
+    top: 0;
+}
+
+a.custom-logo-link.new-year img {
+    margin-top: auto;
+}
+
+@media (max-width: 980px) {
+	a.custom-logo-link.new-year:before {
+		width: 25px;
+		left: -5px;
+        top: 2px;
+	}
+}
+/* @media (max-width: 570px) {
+	a.custom-logo-link.new-year:before {
+		width: 60px;
+		left: -14px;
+		top: -9px;
+	}
+} */
+
+#top-menu-2 a.custom-logo-link.new-year:before {
+    transition: all 0.3s ease;
+}
+
+#top-menu-2.show a.custom-logo-link.new-year:before {
+    width: 40px;
+}
+
+body.b-new-year {
+    position: relative;
+}
+
+body.b-new-year:before {
+    position: fixed;
+    background: url(../img/new-year/new-year-footer-banner.png) repeat-x;
+    content: '';
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background-size: contain;
+}
+
+@media (max-width: 1300px) {
+    body.b-new-year:before {
+		background-size: cover;
+	}
+}
+/*** END NEW YEAR ***/
+

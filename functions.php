@@ -195,4 +195,76 @@
 	}
 
 
+    /*** ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
+    function echo_description()
+    {
+
+        // Если страница стандартной категории поста
+        if (is_category()) {
+            echo wp_strip_all_tags(category_description());
+
+            // Если страница продукта woocommerce
+        } elseif (is_product()) {
+            $product = wc_get_product(get_the_ID());
+            $short_description = $product->get_short_description();
+            echo wp_strip_all_tags($short_description);
+
+            // Если страница категории продукта woocommerce
+        } elseif (is_product_category()) {
+            foreach (wp_get_post_terms(get_the_id(), 'product_cat') as $term) {
+                if ($term) {
+                    //echo $term->name . '<br>'; // product category name
+                    if ($term->description) {
+                        echo $term->description; // Product category description
+                    }
+                }
+            }
+
+            // Если страница портфолио
+        } elseif (is_post_type_archive('portfolio')) {
+            echo 'Портфолио';
+
+            // Если страница категорий портфолио
+        } elseif (is_tax('portfolio-cat')) {
+            $term = get_queried_object(); // Получаем текущий термин
+            echo $term->description;
+            //echo 'Категория портфолио';
+
+            // Если страница магазина	
+        } elseif ( is_shop() ) {
+            $shop_page_id = wc_get_page_id('shop');
+            echo get_the_excerpt($shop_page_id);
+
+            // Если обычная страница
+        } elseif ( is_page() ) {
+            echo get_the_excerpt();
+        
+        // Во всех других случаях
+        } else {
+            echo get_the_title();
+        }
+    }
+    /*** END ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
+
+    // КЛАССЫ В BODY_CLASS
+add_filter('body_class', 'custom_body_classes');
+
+function custom_body_classes($classes) {
+	// Добавить класс для всех страниц
+	$classes[] = 'b-new-year';
+	return $classes;
+}
+
+
+
+/*** ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
+add_filter('robots_txt', 'custom_robots_txt');
+function custom_robots_txt($output)
+{
+    $output = "User-agent: *\n";
+    $output .= "Disallow: *?add-to-cart=*\n";
+	$output .= "Disallow: *?filter_*\n";
+    return $output;
+}
+/*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
 ?>
