@@ -28,28 +28,29 @@ p {
 	color: #102a83;
 }
 
-
 /* Form control corporate 2 */
 .form-control-corporate-2 {
-    display: block;
-    width: 100%;
-    padding: 0.45rem 0.75rem;
+	display: block;
+	width: 100%;
+	padding: 0.45rem 0.75rem;
 	font-family: Gilroy-Regular;
-    font-size: 16px;
-    line-height: 1.5;
-    /*color: #ffe5d0;*/
-    background: none;
-    background-clip: padding-box;
+	font-size: 16px;
+	line-height: 1.5;
+	/*color: #ffe5d0;*/
+	background: none;
+	background-clip: padding-box;
 	border: 2px solid #102a83;
 	-webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 	margin-bottom: 20px;
 }
 
-.form-control-corporate-2:focus, .form-control-corporate-2:active, .form-control-corporate-2 :checked {
+.form-control-corporate-2:focus,
+.form-control-corporate-2:active,
+.form-control-corporate-2 :checked {
 	border: 2px solid #102a83;
 }
 /* End form control corporate 2 */
@@ -64,10 +65,9 @@ p {
 	width: 15px;
 	height: 15px;
 	background: #fffd00;
-	position: absolute; 
+	position: absolute;
 }
 /*** END ALL ***/
-
 
 /*** MENU ***/
 .navbar-brand {
@@ -88,7 +88,7 @@ p {
 
 .ico-button {
 	opacity: 75%;
-	transition: .25s;
+	transition: 0.25s;
 }
 
 .ico-button:hover {
@@ -103,7 +103,7 @@ p {
 
 #top-menu-tel {
 	font-family: HelveticaNeueCyr-Medium;
-	font-size: 16px!important;
+	font-size: 16px !important;
 	color: #4b4b4b;
 }
 
@@ -125,7 +125,7 @@ p {
 }
 
 #vyzov-na-zamer-top-menu-line-height {
-	line-height: 20px!important;
+	line-height: 20px !important;
 }
 
 #navbarSupportedContent2 {
@@ -144,7 +144,8 @@ p {
 	border-bottom: 1px solid #d7d7d7;
 }
 
-#top-menu-1 span, #top-menu-1 .nav-link {
+#top-menu-1 span,
+#top-menu-1 .nav-link {
 	font-family: HelveticaNeueCyr-Roman;
 	font-size: 14px;
 	color: white;
@@ -155,10 +156,9 @@ p {
 	width: 100%;
 	z-index: 999;
 	top: 59px;
-	transition: .25s;
+	transition: 0.25s;
 }
 /*** END MENU ***/
-
 
 /*** CATALOGY ***/
 .approximation {
@@ -171,19 +171,19 @@ p {
 .approximation img {
 	width: 100%;
 	height: 100%;
-	transition: .3s all ease;
-	-webkit-transition: all .3s ease;
+	transition: 0.3s all ease;
+	-webkit-transition: all 0.3s ease;
 	-webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
 	object-fit: cover;
 	object-position: center;
 }
 
 .approximation:hover img {
 	-webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .card-wrapper {
@@ -192,7 +192,7 @@ p {
 	left: 0;
 	top: 0;
 	right: 0;
-	background: rgba(0,0,0,.25);
+	background: rgba(0, 0, 0, 0.25);
 	cursor: pointer;
 }
 
@@ -209,13 +209,12 @@ p {
 }
 /*** END CATALOGY ***/
 
-
 /*** CATALOGY SECTION 2 ***/
 .catalogy-menu .nav-link {
 	color: #323232;
 	font-family: HelveticaNeueCyr-Light;
 	font-size: 26px;
-	opacity: 1!important;
+	opacity: 1 !important;
 }
 
 .catalogy-menu .nav-link.active {
@@ -228,53 +227,52 @@ p {
 }
 /*** END CATALOGY SECTION 2 ***/
 
-
 /*** SALE SECTION ***/
 .sale-section .approximation {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
 	/*background: #0e246f;
 	border-color: red;*/
 }
 
 .sale-section .approximation.approximation-lg {
-    height: 400px;
+	height: 400px;
 }
 
 .sale-section .approximation img {
-    width: 100%;
-    height: 100%;
-    transition: .3s all ease;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    object-fit: cover;
-    object-position: center;
+	width: 100%;
+	height: 100%;
+	transition: 0.3s all ease;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	object-fit: cover;
+	object-position: center;
 	border-color: red;
 }
 
 .sale-section .approximation:hover img {
 	-webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .sale-section .card-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    right: 0;
-	background: rgba(0,0,0,.125);
-    cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.125);
+	cursor: pointer;
 	border-color: red;
-	transition: .35s;
+	transition: 0.35s;
 }
 
 .sale-section .card-wrapper:hover {
-	background: rgba(0,0,0,0);
+	background: rgba(0, 0, 0, 0);
 }
 
 .sale-section .card-wrapper h2 {
@@ -282,10 +280,10 @@ p {
 	font-size: 28px;
 	color: #ffffff;
 	position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-left: 25px;
-    padding-bottom: 20px;
+	bottom: 0;
+	left: 0;
+	padding-left: 25px;
+	padding-bottom: 20px;
 }
 
 .flag {
@@ -300,7 +298,7 @@ p {
 	position: relative;
 	-webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-	
+
 	position: absolute;
 	z-index: 990;
 	left: 0;
@@ -325,7 +323,6 @@ p {
 	line-height: 26px;
 }
 /*** SALE SECTION ***/
-
 
 /*** ORDER SECTION ***/
 .order-section {
@@ -360,11 +357,10 @@ p {
 }
 /*** END ORDER SECTION ***/
 
-
 /*** HOME PORTFOLIO ***/
 .magnifier {
-    transition: 0.35s;
-    opacity: 0;
+	transition: 0.35s;
+	opacity: 0;
 	position: absolute;
 	background: url(../img/ico/private-eye-magnifying-glass.png) no-repeat center;
 	top: 0;
@@ -374,11 +370,10 @@ p {
 }
 
 .magnifier:hover {
-    cursor: pointer;
-    opacity: 1;
+	cursor: pointer;
+	opacity: 1;
 }
 /*** END HOME PORTFOLIO ***/
-
 
 /*** SINGLE PRODUCT ***/
 
@@ -390,8 +385,6 @@ p {
 	height: 300px;
 }
 /*** END SINGLE PRODUCT***/
-
-
 
 /*** CONTACTS ***/
 .contacts-section {
@@ -430,7 +423,6 @@ p {
 }
 /*** END CONTACTS ***/
 
-
 /*** FOOTER ***/
 footer {
 	border-top: 1px solid #969696;
@@ -450,7 +442,6 @@ footer {
 }
 /*** END FOOTER ***/
 
-
 /* Задний фон для сообщения об успешной отправки данных */
 #background-msg {
 	background: black;
@@ -464,7 +455,7 @@ footer {
 	cursor: pointer;
 }
 
-/* Сообщение об успешной отправке данных */	
+/* Сообщение об успешной отправке данных */
 #message {
 	z-index: 9999;
 	max-width: 450px;
@@ -476,4 +467,17 @@ footer {
 	font-size: 130%;
 	color: white;
 	margin: auto;
+}
+
+@media (max-width: 768px) {
+	.ymaps-2-1-79-image {
+		width: 224px !important;
+		height: 197px !important;
+		background-size: 224px 197px !important;
+	}
+}
+
+.woocommerce-product-details__short-description h2,
+.text-darkbrown {
+	color: #102a83;
 }

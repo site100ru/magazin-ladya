@@ -20,8 +20,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="yandex-verification" content="794ea77bc93f2d22" />
+		<!-- Новый код верификации -->
+		<meta name="yandex-verification" content="fd44421075c75556" />
 		<link rel="icon" href="https://xn----7sbabmjsi2adq8pnb.xn--p1ai/wp-content/uploads/favicon.png" type="image/x-icon">
-		<title>Мебельный магазин «Ладья» - Вся мебель в одном магазине</title>
+		<title>Мебельный магазин «Ладья» - Вся мебель в одном магазине!</title>
 		<!-- Bootstrap CSS -->
 		<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Style CSS -->
@@ -168,7 +170,7 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col text-center">
-						<h1>Вся мебель в одном магазине</h1>
+						<h1>Вся мебель в одном магазине!</h1>
 						<p class="header-description">Кухни, шкафы, гардеробные, гостиные, мягкая мебель, прихожие, спальни, детские, обеденные группы и другая мебель готовая и на заказ.</p>
 						
 						<button type="submit" class="btn btn-lg btn-corporate-1 mb-3 mb-md-0" data-bs-toggle="modal" data-bs-target="#designerModal">Запись к дизайнеру</button>
@@ -662,7 +664,7 @@
 						</div><!-- .row -->
 						<div class="row">
 							<div class="col text-center">
-								<a href="http://магазин-ладья.рф/наши-работы/" type="button" class="btn btn-lg btn-corporate-1 px-1">Смотреть все работы</a>
+								<a href="https://магазин-ладья.рф/наши-работы/" type="button" class="btn btn-lg btn-corporate-1 px-1">Смотреть все работы</a>
 							</div>
 						</div>
 					</div><!-- .col -->
@@ -700,7 +702,8 @@
 										<div class="carousel-item carousel-item-2 h-100 <?php if ( $i == 1 ) echo ' active'; ?>">
 											<div class="row align-items-center h-100">
 												<div class="col text-center">
-													<img data-src="<?php echo get_post_meta($post->ID, '_img-'.$i )[0]; ?>" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh;" alt="...">
+													<img data-src="<?php echo str_replace('http://', 'https://', get_post_meta($post->ID, '_img-'.$i )[0]); ?>" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh;" alt="...">
+
 												</div>
 											</div>
 										</div>

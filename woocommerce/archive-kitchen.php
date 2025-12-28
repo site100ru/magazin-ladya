@@ -126,7 +126,7 @@
 							<span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point-ico.png"></span>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="actions.html">Акции</a>
+							<a class="nav-link" href="/акции">Акции</a>
 						</li>
 						<li class="nav-item d-none d-xl-inline">
 							<span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point-ico.png"></span>
@@ -1281,6 +1281,9 @@ defined( 'ABSPATH' ) || exit;
 					<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон*">
 				</div>
 			</div>
+
+			<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response-callback">
+
 		</div>
 		<div class="modal-footer">
 			<button type="submit" class="btn btn-corporate-2 px-3 mx-auto">Записаться</button>
@@ -1313,6 +1316,8 @@ defined( 'ABSPATH' ) || exit;
 					<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон*">
 				</div>
 			</div>
+
+			<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response-order">
 		</div>
 		<div class="modal-footer">
 			<button type="submit" class="btn btn-corporate-2 px-3 mx-auto">Пригласить</button>
@@ -1343,6 +1348,9 @@ defined( 'ABSPATH' ) || exit;
 					<textarea type="text" name="mes" class="form-control" placeholder="Ваш вопрос*" required></textarea>
 				</div>
 			</div>
+
+			<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response-message">
+
 		</div>
 		<div class="modal-footer">
 			<button type="submit" class="btn btn-corporate-2 px-3 mx-auto">Отправить</button>
@@ -1405,7 +1413,7 @@ var screenWidth = document.documentElement.clientWidth;
 if ( screenWidth > 1000 ) {
 	var zoom = 17;
 } else {
-	var zoom = 9;
+		var zoom = 17;
 }
 
 function init() {
@@ -1571,6 +1579,35 @@ function question3() {
 }
 </script>
 <!-- END QUIZ -->
+
+
+<!-- reCaptcha v3 New from Google -->
+<script src='https://www.google.com/recaptcha/api.js?render=6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn'></script>
+<script>
+grecaptcha.ready(function() {
+	grecaptcha.execute('6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn', {action: 'action_name'}).then(function(token) {
+		if ( document.getElementById('g-recaptcha-response-callback') ) {
+			document.getElementById('g-recaptcha-response-callback').value=token;
+		}
+		
+		if ( document.getElementById('g-recaptcha-response-order') ) {
+			document.getElementById('g-recaptcha-response-order').value=token;
+		}
+		
+		if ( document.getElementById('g-recaptcha-response-measurer') ) {
+			document.getElementById('g-recaptcha-response-measurer').value=token;
+		}
+		
+		if ( document.getElementById('g-recaptcha-response-designer') ) {
+			document.getElementById('g-recaptcha-response-designer').value=token;
+		}
+		
+		if ( document.getElementById('g-recaptcha-response-message') ) {
+			document.getElementById('g-recaptcha-response-message').value=token;
+		}
+	});
+});
+</script>
 
 		
 <?php get_footer(); ?>

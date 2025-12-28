@@ -366,7 +366,7 @@ header.second-header {
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 	#top-menu-2 {
-		background: rgb(238, 238, 1, 0.7);
+		background: rgba(0, 0, 0, 0.45);
 		position: fixed;
 		width: 100%;
 		z-index: 999;
@@ -518,7 +518,6 @@ header.second-header {
 .callback-button-ico {
 	width: 40px;
 	height: 40px;
-	filter: invert();
 	animation: change linear 16s infinite;
 	-webkit-animation: change linear 16s infinite;
 	-webkit-transition: transform 1s ease-in-out;
@@ -781,7 +780,7 @@ header.second-header {
 .callback-form-button-ico {
 	width: 30px;
 	height: 30px;
-	filter: invert();
+
 	background: url(../img/callback/callback-phone-button-ico.svg) center no-repeat;
 	background-size: contain;
 	-moz-background-size: contain;
@@ -811,7 +810,7 @@ header.second-header {
 .callback-phone-button-ico {
 	width: 30px;
 	height: 30px;
-	filter: invert();
+
 	background: url(../img/callback/callback-phone-ico.svg) center no-repeat;
 	background-size: contain;
 	-moz-background-size: contain;
@@ -841,7 +840,7 @@ header.second-header {
 .callback-whatsapp-button-ico {
 	width: 30px;
 	height: 30px;
-	filter: invert();
+
 	background: url(../img/callback/callback-whatsapp-ico.svg) center no-repeat;
 	background-size: contain;
 	-moz-background-size: contain;
@@ -871,7 +870,7 @@ header.second-header {
 .callback-telegram-button-ico {
 	width: 30px;
 	height: 30px;
-	filter: invert();
+
 	background: url(../img/callback/callback-telegram-ico.svg) center no-repeat;
 	background-size: contain;
 	-moz-background-size: contain;
@@ -880,4 +879,7 @@ header.second-header {
 }
 /*** END CALLBACK BUTTON ***/
 
-.test{}
+
+.dropdown-toggle::after {
+	vertical-align: middle !important;
+}
