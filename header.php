@@ -110,7 +110,7 @@
 		<!-- Menu 2 -->
 		<nav id="top-menu-2" class="navbar navbar-expand-xl navbar-dark py-3">
 			<div class="container">
-                <a href="/" class="navbar-brand custom-logo-link new-year" rel="home" aria-current="page">
+                <a class="navbar-brand" href="/">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo.png" id="navbar-brand-img" class="custom-logo" alt="Логотип в шапке" decoding="async" />
                 </a>
 
