@@ -270,6 +270,8 @@ function custom_robots_txt($output)
     $output = "User-agent: *\n";
     $output .= "Disallow: *?add-to-cart=*\n";
 	$output .= "Disallow: *?filter_*\n";
+	$output .= "Host: https://xn----7sbabmjsi2adq8pnb.xn--p1ai\n";
+	$output .= "Sitemap: https://xn----7sbabmjsi2adq8pnb.xn--p1ai/sitemap.xml\n";
     return $output;
 }
 /*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
