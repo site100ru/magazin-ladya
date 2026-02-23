@@ -527,7 +527,7 @@
     }
 </script>
 <!-- /Callback button JS -->
-	<?php include get_template_directory() . '/inc/snowflake/snowflake.php'; ?>
+	<!-- <?php include get_template_directory() . '/inc/snowflake/snowflake.php'; ?> -->
 
     <script>
         prilipalo();

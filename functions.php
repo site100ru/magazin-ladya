@@ -210,14 +210,10 @@
             echo wp_strip_all_tags($short_description);
 
             // Если страница категории продукта woocommerce
-        } elseif (is_product_category()) {
-            foreach (wp_get_post_terms(get_the_id(), 'product_cat') as $term) {
-                if ($term) {
-                    //echo $term->name . '<br>'; // product category name
-                    if ($term->description) {
-                        echo $term->description; // Product category description
-                    }
-                }
+        } elseif ( is_product_category() ) {
+            $term = get_queried_object(); // Получаем текущую категорию
+            if( $term && !empty( $term->description ) ){
+                echo wp_strip_all_tags( $term->description ); // Описание только текущей категории
             }
 
             // Если страница портфолио
@@ -227,22 +223,18 @@
             // Если страница категорий портфолио
         } elseif (is_tax('portfolio-cat')) {
             $term = get_queried_object(); // Получаем текущий термин
-            echo $term->description;
+            echo wp_strip_all_tags( $term->description );
             //echo 'Категория портфолио';
 
             // Если страница магазина	
-        } elseif ( is_shop() ) {
-            $shop_page_id = wc_get_page_id('shop');
-            echo get_the_excerpt($shop_page_id);
-
-            // Если обычная страница
-        } elseif ( is_page() ) {
-            echo get_the_excerpt();
-        
-        // Во всех других случаях
-        } else {
-            echo get_the_title();
-        }
+		} elseif ( is_shop() ) {
+			$shop_page_id = wc_get_page_id('shop');
+			echo wp_strip_all_tags( get_the_excerpt($shop_page_id) );
+		
+		// Если обычная страница
+		} else {
+			echo wp_strip_all_tags( get_the_excerpt() );
+		}
     }
     /*** END ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
 
