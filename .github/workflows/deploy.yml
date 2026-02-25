@@ -23,5 +23,6 @@ jobs:
             # git pull
 
             # Жесткая перезапись
+            cd ~/magazin-ladya/public_html/wp-content/themes/magazin-ladya
             git fetch --all
             git reset --hard origin/main
