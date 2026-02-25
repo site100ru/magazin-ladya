@@ -954,7 +954,7 @@ a.custom-logo-link.new-year img {
 #top-menu-2 a.custom-logo-link.new-year:before {
     transition: all 0.3s ease;
 }
-
+ 
 #top-menu-2.show a.custom-logo-link.new-year:before {
     width: 40px;
 }

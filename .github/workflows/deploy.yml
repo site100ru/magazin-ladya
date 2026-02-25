@@ -19,9 +19,9 @@ jobs:
             # cd ~/magazin-ladya/public_html/wp-content/themes
             # git clone https://github.com/site100ru/magazin-ladya.git magazin-ladya
 
-            # cd ~/magazin-ladya/public_html/wp-content/themes/magazin-ladya
-            # git pull
+            cd ~/magazin-ladya/public_html/wp-content/themes/magazin-ladya
+            git pull
 
-            Жесткая перезапись
-            git fetch --all
-            git reset --hard origin/main
+            # Жесткая перезапись
+            # git fetch --all
+            # git reset --hard origin/main
