@@ -48,6 +48,7 @@
 	font-family: Gilroy-Semibold;
 	font-size: 20px;
 }
+
 /*** END FONTS ***/
 
 .scroll-points {
@@ -157,6 +158,7 @@ header .btn-corporate-outline-1:focus {
 .btn-corporate-outline-1:focus {
 	box-shadow: 0 0 1px 3px rgba(255, 253, 0, 0.5);
 }
+
 /*** END BUTTONS ***/
 
 /*** HEADER ***/
@@ -184,6 +186,7 @@ header.second-header {
 	margin: auto;
 	margin-bottom: 40px;
 }
+
 /*** END HEADER ***/
 
 /*** HOME SECTION ***/
@@ -193,20 +196,26 @@ header.second-header {
 	font-family: Gilroy-Semibold;
 	font-size: 20px;
 	color: #ffffff;
-} /* Home section advantage title */
+}
+
+/* Home section advantage title */
 
 /* Home section advantage description */
 .home-section-advantage-description {
 	font-family: HelveticaNeueCyr-Light;
 	font-size: 18px;
 	color: #ffffff;
-} /* Home section advantage description */
+}
+
+/* Home section advantage description */
 
 /* Block home advantage left */
 .block-home-advantage-left {
 	float: left;
 	width: 70px;
-} /* End block home advantage left*/
+}
+
+/* End block home advantage left*/
 
 /* Block home advantage right */
 .block-home-advantage-right {
@@ -214,7 +223,9 @@ header.second-header {
 	width: calc(100% - 70px);
 	position: relative;
 	top: 5px;
-} /* End block home advantage right */
+}
+
+/* End block home advantage right */
 /* End block home advantage */
 /*** END HOME SECTION ***/
 
@@ -231,7 +242,9 @@ header.second-header {
 	color: #0e246f;
 	border-color: rgba(14, 36, 111, 0.25);
 	background-color: rgba(14, 36, 111, 0.25);
-} /* End pagination */
+}
+
+/* End pagination */
 /*** END ARCHIVE POST ***/
 
 /*** ARCHIVE PRODUCT ***/
@@ -274,8 +287,7 @@ header.second-header {
 
 .woocommerce-widget-layered-nav-list__item.wc-layered-nav-term a:before,
 .woocommerce-widget-layered-nav-list__item.wc-layered-nav-term a:focus:before,
-.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen
-	a:before {
+.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen a:before {
 	content: '';
 	display: inline-block;
 	width: 18px;
@@ -287,8 +299,7 @@ header.second-header {
 }
 
 .woocommerce-widget-layered-nav-list__item.wc-layered-nav-term a:focus:after,
-.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen
-	a:after {
+.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen a:after {
 	content: '';
 	display: inline-block;
 	width: 10px;
@@ -300,12 +311,11 @@ header.second-header {
 	top: 7px;
 }
 
-.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen
-	a:focus:after,
-.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen
-	a:active:after {
+.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen a:focus:after,
+.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen a:active:after {
 	opacity: 0;
 }
+
 /*** END ARCHIVE PRODUCT ***/
 
 /*** PORTFOLIO ***/
@@ -361,6 +371,7 @@ header.second-header {
 .portfolio-section .approximation:hover {
 	cursor: pointer;
 }
+
 /*** END PORTFOLIO ***/
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -443,6 +454,7 @@ header.second-header {
 	.light {
 		height: 250px;
 	}
+
 	/*** Portfolio ***/
 
 	.price {
@@ -493,7 +505,7 @@ header.second-header {
 }
 
 .callback-button:hover {
-	background:#eeee01;
+	background: #eeee01;
 }
 
 .onsale {
@@ -505,10 +517,12 @@ header.second-header {
 		box-shadow: 0 0 0 0 rgba(238, 238, 1, 0.3), 0 0 0 0 rgba(238, 238, 1, 0.3),
 			0 0 8px 0 rgba(238, 238, 1, 0.5);
 	}
+
 	50% {
 		box-shadow: 0 0 0 0 rgba(238, 238, 1, 0.15), 0 0 0 15px rgba(238, 238, 1, 0.15),
 			0 0 8px 0 rgba(238, 238, 1, 0.5);
 	}
+
 	100% {
 		box-shadow: 0 0 0 20px rgba(238, 238, 1, 0), 0 0 0 30px rgba(238, 238, 1, 0),
 			0 0 8px 0 rgba(238, 238, 1, 0.5);
@@ -545,6 +559,7 @@ header.second-header {
 		transform: rotate(0deg);
 		opacity: 0;
 	}
+
 	1% {
 		background-image: url(../img/callback/callback-button-ico.png);
 		background-position: center;
@@ -559,6 +574,7 @@ header.second-header {
 		transform: rotate(360deg);
 		opacity: 1;
 	}
+
 	24% {
 		background-image: url(../img/callback/callback-button-ico.png);
 		background-position: center;
@@ -573,6 +589,7 @@ header.second-header {
 		transform: rotate(360deg);
 		opacity: 1;
 	}
+
 	25% {
 		background-image: url(../img/callback/callback-button-ico.png);
 		background-position: center;
@@ -586,6 +603,7 @@ header.second-header {
 		-ms-transform: rotate(0deg);
 		opacity: 0;
 	}
+
 	26% {
 		background-image: url(../img/callback/callback-phone-ico.png);
 		background-position: center;
@@ -599,6 +617,7 @@ header.second-header {
 		-ms-transform: rotate(0deg);
 		opacity: 0;
 	}
+
 	27% {
 		background-image: url(../img/callback/callback-phone-ico.png);
 		background-position: center;
@@ -612,6 +631,7 @@ header.second-header {
 		-ms-transform: rotate(360deg);
 		opacity: 1;
 	}
+
 	49% {
 		background-image: url(../img/callback/callback-phone-ico.png);
 		background-position: center;
@@ -625,6 +645,7 @@ header.second-header {
 		-webkit-transform: rotate(360deg);
 		-ms-transform: rotate(360deg);
 	}
+
 	50% {
 		background-image: url(../img/callback/callback-phone-ico.png);
 		background-position: center;
@@ -638,6 +659,7 @@ header.second-header {
 		-ms-transform: rotate(0deg);
 		opacity: 0;
 	}
+
 	51% {
 		background-image: url(../img/callback/callback-whatsapp-ico.svg);
 		background-position: center;
@@ -649,6 +671,7 @@ header.second-header {
 		transform: rotate(0deg);
 		opacity: 0;
 	}
+
 	52% {
 		background-image: url(../img/callback/callback-whatsapp-ico.svg);
 		background-position: center;
@@ -660,6 +683,7 @@ header.second-header {
 		opacity: 1;
 		transform: rotate(360deg);
 	}
+
 	74% {
 		background-image: url(../img/callback/callback-whatsapp-ico.svg);
 		background-position: center;
@@ -671,6 +695,7 @@ header.second-header {
 		opacity: 1;
 		transform: rotate(360deg);
 	}
+
 	75% {
 		background-image: url(../img/callback/callback-whatsapp-ico.svg);
 		background-position: center;
@@ -683,6 +708,7 @@ header.second-header {
 		transform: rotate(0deg);
 		opacity: 0;
 	}
+
 	76% {
 		background-image: url(../img/callback/callback-telegram-ico.svg);
 		background-position: center;
@@ -695,6 +721,7 @@ header.second-header {
 		transform: rotate(0deg);
 		opacity: 0;
 	}
+
 	77% {
 		background-image: url(../img/callback/callback-telegram-ico.svg);
 		background-position: center;
@@ -707,6 +734,7 @@ header.second-header {
 		transform: rotate(360deg);
 		opacity: 1;
 	}
+
 	99% {
 		background-image: url(../img/callback/callback-telegram-ico.svg);
 		background-position: center;
@@ -719,6 +747,7 @@ header.second-header {
 		transform: rotate(360deg);
 		opacity: 1;
 	}
+
 	100% {
 		background-image: url(../img/callback/callback-telegram-ico.svg);
 		background-position: center;
@@ -745,6 +774,7 @@ header.second-header {
 		transform: rotate(0deg);
 		opacity: 0;
 	}
+
 	50% {
 		background-image: url(../img/callback/callback-button-close.png);
 		background-position: center;
@@ -774,7 +804,7 @@ header.second-header {
 }
 
 .callback-form-button:hover {
-	background:#eeee01;
+	background: #eeee01;
 }
 
 .callback-form-button-ico {
@@ -804,7 +834,7 @@ header.second-header {
 }
 
 .callback-phone-button:hover {
-	background:#eeee01;
+	background: #eeee01;
 }
 
 .callback-phone-button-ico {
@@ -834,7 +864,7 @@ header.second-header {
 }
 
 .callback-whatsapp-button:hover {
-	background:#eeee01;
+	background: #eeee01;
 }
 
 .callback-whatsapp-button-ico {
@@ -864,7 +894,7 @@ header.second-header {
 }
 
 .callback-telegram-button:hover {
-	background:#eeee01;
+	background: #eeee01;
 }
 
 .callback-telegram-button-ico {
@@ -906,6 +936,7 @@ header.second-header {
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 }
+
 /*** END CALLBACK BUTTON ***/
 
 
@@ -913,36 +944,37 @@ header.second-header {
 	vertical-align: middle !important;
 }
 
-.test{}
+.test {}
 
 /*** NEW YEAR ***/
 a.custom-logo-link.new-year {
-    position: relative;
+	position: relative;
 }
 
 a.custom-logo-link.new-year:before {
-    content: '';
-    background: url(../img/new-year/new-year-cap.png) no-repeat;
-    width: 60px;
-    height: 63px;
-    z-index: 9999;
-    position: absolute;
-    background-size: contain;
-    left: -15px;
-    top: 0;
+	content: '';
+	background: url(../img/new-year/new-year-cap.png) no-repeat;
+	width: 60px;
+	height: 63px;
+	z-index: 9999;
+	position: absolute;
+	background-size: contain;
+	left: -15px;
+	top: 0;
 }
 
 a.custom-logo-link.new-year img {
-    margin-top: auto;
+	margin-top: auto;
 }
 
 @media (max-width: 980px) {
 	a.custom-logo-link.new-year:before {
 		width: 25px;
 		left: -5px;
-        top: 2px;
+		top: 2px;
 	}
 }
+
 /* @media (max-width: 570px) {
 	a.custom-logo-link.new-year:before {
 		width: 60px;
@@ -952,33 +984,35 @@ a.custom-logo-link.new-year img {
 } */
 
 #top-menu-2 a.custom-logo-link.new-year:before {
-    transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
- 
+
 #top-menu-2.show a.custom-logo-link.new-year:before {
-    width: 40px;
+	width: 40px;
 }
 
 body.b-new-year {
-    position: relative;
+	position: relative;
 }
 
 body.b-new-year:before {
-    position: fixed;
-    background: url(../img/new-year/new-year-footer-banner.png) repeat-x;
-    content: '';
-    width: 100%;
-    height: 100px;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    background-size: contain;
+	position: fixed;
+	background: url(../img/new-year/new-year-footer-banner.png) repeat-x;
+	content: '';
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	background-size: contain;
 }
 
 @media (max-width: 1300px) {
-    body.b-new-year:before {
+	body.b-new-year:before {
 		background-size: cover;
 	}
 }
+
 /*** END NEW YEAR ***/
 
+.test {}
