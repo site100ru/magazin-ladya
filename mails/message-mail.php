@@ -34,8 +34,7 @@
 			$email = $_POST['email'];
 			$mes = $_POST['mes'];
             $headers = "MIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nFrom: =?UTF-8?B?" . base64_encode("магазин-ладья.рф") . "?= <info@xn----7sbabmjsi2adq8pnb.xn--p1ai>\r\n";
-            // mail("ladya.kuhni@mail.ru, vasilyev-r@mail.ru", "Сообщение с сайта магазин-ладья.рф", "
-            mail("sidorov-vv3@mail.ru, vasilyev-r@mail.ru", "Сообщение с сайта магазин-ладья.рф", "
+            mail("ladya.kuhni@mail.ru, vasilyev-r@mail.ru", "Сообщение с сайта магазин-ладья.рф", "
 				Клиент: ".$name."\n
 				Email: ".$email."\n
 				Сообщение: ".$mes."\n

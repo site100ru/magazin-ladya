@@ -42,8 +42,7 @@
 			$tel = $_POST['tel'];
 
 			$headers = "MIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nFrom: =?UTF-8?B?" . base64_encode("магазин-ладья.рф") . "?= <info@xn----7sbabmjsi2adq8pnb.xn--p1ai>\r\n";
-			// mail( "ladya.kuhni@mail.ru, vasilyev-r@mail.ru", "Запись к дизайнеру или вызов замерщика с сайта магазин-ладья.рф", "
-            mail( "sidorov-vv3@mail.ru, vasilyev-r@mail.ru", "Запись к дизайнеру или вызов замерщика с сайта магазин-ладья.рф", "
+			mail( "ladya.kuhni@mail.ru, vasilyev-r@mail.ru", "Запись к дизайнеру или вызов замерщика с сайта магазин-ладья.рф", "
 				Клиент: " . $name ."\n
 				Телефон: " . $tel, $headers
 			);

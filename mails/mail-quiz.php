@@ -33,9 +33,7 @@ if($_POST){
 		$mail .= "Размер 3: ".$answer2_3."\n\n";
 		$mail .= "Материал: ".$answer3."\n\n";
 		
-		mail("ladya.kuhni@mail.ru, vasilyev-r@mail.ru", "Заявка на рассчет кухни.", $mail);
-        // mail("sidorov-vv3@mail.ru, vasilyev-r@mail.ru", "Заявка на рассчет кухни.", $mail);
-	//	mail("vasilyev-r@mail.ru", "Заявка на рассчет кухни.", $mail);
+		mail("ladya.kuhni@mail.ru, vasilyev-r@mail.ru", "Заявка на рассчет кухни.", $mail);	//	mail("vasilyev-r@mail.ru", "Заявка на рассчет кухни.", $mail);
 	
 		$_SESSION['win'] = 1;
 		$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в мебельный магазин «Ладья». В&#160;ближайшее время с Вами свяжется наш специалист.</p>';
