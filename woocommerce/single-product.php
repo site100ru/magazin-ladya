@@ -237,7 +237,17 @@
                             </div>
                         </div>
 
-                        <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response-callback">
+                        <!-- <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response-callback"> -->
+
+                        <!-- Капча «Пример на сложение» -->
+                        <div class="row align-items-center mt-3">
+                            <div class="col-auto">
+                                <img class="captchaImg" alt="Пример" width="120" height="40">
+                            </div>
+                            <div class="col">
+                                <input type="text" name="captcha" class="form-control" inputmode="numeric" maxlength="2" autocomplete="off" placeholder="Ответ на пример*" required>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="modal-footer">

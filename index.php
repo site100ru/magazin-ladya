@@ -115,6 +115,11 @@
 									<label class="form-label">Ваш телефон*</label>
 									<input type="text" name="tel" class="form-control-corporate-2 telMask" id="exampleFormControlInput2" required>
 								</div>
+								<!-- Капча «Пример на сложение» -->
+								<div class="col-md-6 mb-4 d-flex align-items-center gap-2">
+									<img class="captchaImg" alt="Пример" width="120" height="40">
+									<input type="text" name="captcha" class="form-control-corporate-2 mb-0" inputmode="numeric" maxlength="2" autocomplete="off" placeholder="Ответ на пример*" required>
+								</div>
 								<div class="col-md-6 mb-5 mb-md-0">
 									<button type="submit" class="d-block w-100 btn btn-lg btn-corporate-2">Записаться к дизайнеру</button>
 								</div>
@@ -1110,6 +1115,14 @@
 											<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
 											<input type="text" class="form-control telMask" id="exampleFormControlInput2" name="phone" required>
 										</div>
+										<!-- Капча «Пример на сложение» -->
+										<div class="col-md-4">
+											<label class="form-label">Ответ на пример*</label>
+											<div class="d-flex align-items-center gap-2">
+												<img class="captchaImg" alt="Пример" width="120" height="40">
+												<input type="text" name="captcha" class="form-control" inputmode="numeric" maxlength="2" autocomplete="off" required>
+											</div>
+										</div>
 									</div>
 									<div class="row">
 										<div class="col text-center" style="margin-top: 45px;">
@@ -1524,6 +1537,14 @@
 											<label for="exampleFormControlInput2-2" class="form-label">Ваш телефон</label>
 											<input type="text" class="form-control telMask" id="exampleFormControlInput2-2" name="phone" required>
 										</div>
+										<!-- Капча «Пример на сложение» -->
+										<div class="col-md-4">
+											<label class="form-label">Ответ на пример*</label>
+											<div class="d-flex align-items-center gap-2">
+												<img class="captchaImg" alt="Пример" width="120" height="40">
+												<input type="text" name="captcha" class="form-control" inputmode="numeric" maxlength="2" autocomplete="off" required>
+											</div>
+										</div>
 									</div>
 									<div class="row">
 										<div class="col text-center" style="margin-top: 45px;">
@@ -1566,6 +1587,11 @@
 										</div>
 										<div class="col-4 mb-3">
 											<input type="text" name="tel" class="form-control form-control-corporate-color-1 telMask" placeholder="Ваш телефон*" required="" inputmode="text">
+										</div>
+										<!-- Капча «Пример на сложение» -->
+										<div class="col-8 mb-3 d-flex align-items-center gap-2">
+											<img class="captchaImg" alt="Пример" width="120" height="40">
+											<input type="text" name="captcha" class="form-control form-control-corporate-color-1" inputmode="numeric" maxlength="2" autocomplete="off" placeholder="Ответ на пример*" required>
 										</div>
 									</div>
 									<div class="row justify-content-center">

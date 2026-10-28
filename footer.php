@@ -71,9 +71,18 @@
                         <input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон*">
                     </div>
                 </div>
+                <!-- Капча «Пример на сложение» -->
+                <div class="row align-items-center mt-3">
+                    <div class="col-auto">
+                        <img class="captchaImg" alt="Пример" width="120" height="40">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="captcha" class="form-control" inputmode="numeric" maxlength="2" autocomplete="off" placeholder="Ответ на пример*" required>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
-                <input type="hidden" id="g-recaptcha-response-designer" name="g-recaptcha-response">
+                <!-- <input type="hidden" id="g-recaptcha-response-designer" name="g-recaptcha-response"> -->
                 <button type="submit" class="btn btn-corporate-2 px-3 mx-auto">Записаться</button>
             </div>
         </form>
@@ -104,9 +113,18 @@
                         <input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон*">
                     </div>
                 </div>
+                <!-- Капча «Пример на сложение» -->
+                <div class="row align-items-center mt-3">
+                    <div class="col-auto">
+                        <img class="captchaImg" alt="Пример" width="120" height="40">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="captcha" class="form-control" inputmode="numeric" maxlength="2" autocomplete="off" placeholder="Ответ на пример*" required>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
-                <input type="hidden" id="g-recaptcha-response-measurer" name="g-recaptcha-response">
+                <!-- <input type="hidden" id="g-recaptcha-response-measurer" name="g-recaptcha-response"> -->
                 <button type="submit" class="btn btn-corporate-2 px-3 mx-auto">Пригласить</button>
             </div>
         </form>
@@ -136,9 +154,18 @@
                         <textarea type="text" name="mes" class="form-control" placeholder="Ваш вопрос*" required></textarea>
                     </div>
                 </div>
+                <!-- Капча «Пример на сложение» -->
+                <div class="row align-items-center mt-3">
+                    <div class="col-auto">
+                        <img class="captchaImg" alt="Пример" width="120" height="40">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="captcha" class="form-control" inputmode="numeric" maxlength="2" autocomplete="off" placeholder="Ответ на пример*" required>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
-                <input type="hidden" id="g-recaptcha-response-message" name="g-recaptcha-response">
+                <!-- <input type="hidden" id="g-recaptcha-response-message" name="g-recaptcha-response"> -->
                 <button type="submit" class="btn btn-corporate-2 px-3 mx-auto">Отправить</button>
             </div>
         </form>
@@ -168,13 +195,19 @@
 <!-- Quiz scripts -->
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/quiz.js"></script>
 
-<!-- Telephone number mask -->
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/inputmask.min.js"></script>
+<!-- Telephone number mask (старая, заменена на captcha/tel-mask.js) -->
+<!--
 <script>
     var telMask = document.getElementsByClassName("telMask");
     var im = new Inputmask("+7(999)999-99-99");
     im.mask(telMask);
 </script>
+-->
+
+<!-- Капча «Пример на сложение» + маска телефона -->
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/inputmask.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/captcha/tel-mask.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/captcha/captcha.js"></script>
 
 <!-- Загрузка изображений с приоритетом -->
 <script>
@@ -370,7 +403,8 @@
     }
 </script>
 
-<!-- reCaptcha v3 New from Google -->
+<!-- reCaptcha v3 New from Google (отключена, заменена на captcha/) -->
+<!--
 <script src='https://www.google.com/recaptcha/api.js?render=6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn'></script>
 <script>
 	grecaptcha.ready(function() {
@@ -397,6 +431,7 @@
 		});
 	});
 </script>
+-->
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >

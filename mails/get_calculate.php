@@ -70,15 +70,32 @@
 		$Return = getCaptcha($_POST['g-recaptcha-response']);
 		// Если вероятность робота более 0.5, то считаем отправителя человеком и выполняем отправку почты
 		if( $Return->success == true && $Return->score > 0.125 ) { */
-			
+
+	// Капча «Пример на сложение» и проверка телефона
+	require_once dirname(__DIR__) . '/captcha/captcha-check.php';
+
+	if ( ! captcha_is_valid( isset( $_POST['captcha'] ) ? $_POST['captcha'] : null ) ) {
+		$_SESSION['win'] = 1;
+		$_SESSION['recaptcha'] = '<p class="text-light"><strong>Извините!</strong><br>Неверный ответ на пример. Пожалуйста повторите попытку!</p>';
+		header("Location: ".$_SERVER['HTTP_REFERER']);
+		exit();
+	}
+
+	if ( ! captcha_phone_is_valid( isset( $_POST['tel'] ) ? $_POST['tel'] : null ) ) {
+		$_SESSION['win'] = 1;
+		$_SESSION['recaptcha'] = '<p class="text-light"><strong>Извините!</strong><br>Введите телефон полностью в формате +7(999)999-99-99. Пожалуйста повторите попытку!</p>';
+		header("Location: ".$_SERVER['HTTP_REFERER']);
+		exit();
+	}
+
 			
 			$name = $_POST['name'];
 			$tel = $_POST['tel'];
 			$mes = $_POST['mes'];
 			
 			$picture = "";
-			$mail_to = "vasilyev-r@mail.ru, ladya.kuhni@mail.ru"; // Адрес доставки почты
-            // $mail_to = "vasilyev-r@mail.ru, sidorov-vv3@mail.ru"; // Адрес доставки почты
+			// $mail_to = "vasilyev-r@mail.ru, ladya.kuhni@mail.ru"; // Адрес доставки почты
+            $mail_to = "vasilyev-r@mail.ru, sidorov-vv3@mail.ru"; // Адрес доставки почты
             
 			$thm = "Зявка на расчет стоимости корпусной мебели с сайта магазин-ладья.рф"; // Тема письма
 			

@@ -336,6 +336,11 @@
 								<input type="text" name="tel" class="form-control-corporate-2 telMask" id="exampleFormControlInput3216"
 									required>
 							</div>
+							<!-- Капча «Пример на сложение» -->
+							<div class="col-md-6 mb-4 d-flex align-items-center gap-2">
+								<img class="captchaImg" alt="Пример" width="120" height="40">
+								<input type="text" name="captcha" class="form-control-corporate-2 mb-0" inputmode="numeric" maxlength="2" autocomplete="off" placeholder="Ответ на пример*" required>
+							</div>
 							<div class="col-md-6 mb-5 mb-md-0">
 								<button type="submit" class="d-block w-100 btn btn-lg btn-corporate-2">Записаться к дизайнеру</button>
 							</div>
