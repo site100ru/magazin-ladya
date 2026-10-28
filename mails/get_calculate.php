@@ -22,7 +22,7 @@
 
 		$headers = "MIME-Version: 1.0\r\n";
 		
-		$headers .= "From: магазин-ладья.рф\r\n";
+		$headers .= "From: =?UTF-8?B?" . base64_encode("магазин-ладья.рф") . "?= <info@xn----7sbabmjsi2adq8pnb.xn--p1ai>\r\n";
 
 		$headers .="Content-Type: multipart/mixed; boundary=\"$boundary\"\n"; 
 
@@ -147,7 +147,7 @@
 			/* Отправляем почтовое сообщение  */
 			if ( empty( $picture ) ) {
 				$headers = "MIME-Version: 1.0\r\n";
-				$headers .= "From: магазин-ладья.рф\r\n";
+				$headers .= "From: =?UTF-8?B?" . base64_encode("магазин-ладья.рф") . "?= <info@xn----7sbabmjsi2adq8pnb.xn--p1ai>\r\n";
 				$headers .= "Content-type: text/html; charset=utf-8\r\n";
 				$msg = "
 					<strong>Имя:</strong> ".$name."<br><br>

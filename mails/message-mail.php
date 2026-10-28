@@ -33,12 +33,13 @@
 			$name = $_POST['name'];
 			$email = $_POST['email'];
 			$mes = $_POST['mes'];
+            $headers = "MIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nFrom: =?UTF-8?B?" . base64_encode("магазин-ладья.рф") . "?= <info@xn----7sbabmjsi2adq8pnb.xn--p1ai>\r\n";
             // mail("ladya.kuhni@mail.ru, vasilyev-r@mail.ru", "Сообщение с сайта магазин-ладья.рф", "
             mail("sidorov-vv3@mail.ru, vasilyev-r@mail.ru", "Сообщение с сайта магазин-ладья.рф", "
 				Клиент: ".$name."\n
 				Email: ".$email."\n
 				Сообщение: ".$mes."\n
-			" );
+			", $headers );
 			$_SESSION['win'] = 1;
 			$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в мебельный магазин «Ладья». В&#160;ближайшее время с Вами свяжется наш специалист.</p>';
 			header("Location: ".$_SERVER['HTTP_REFERER']);

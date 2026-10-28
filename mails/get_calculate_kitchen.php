@@ -51,6 +51,7 @@
 			/* Проверям что заполнено поле с телефоном */
 			if ( $_POST['phone'] ) {
 				// Если поле с телефоно заполненно
+				$headers = "MIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nFrom: =?UTF-8?B?" . base64_encode("магазин-ладья.рф") . "?= <info@xn----7sbabmjsi2adq8pnb.xn--p1ai>\r\n";
 				// mail( "vasilyev-r@mail.ru, ladya.kuhni@mail.ru", "Зявка на расчет стоимости кухни с сайта магазин-ладья.рф", "
                 mail( "vasilyev-r@mail.ru, sidorov-vv3@mail.ru", "Зявка на расчет стоимости кухни с сайта магазин-ладья.рф", "
 					Тип мебели: " . $answer1 ."\n
@@ -63,7 +64,7 @@
 					Материал фасада: " . $answer5 ."\n
 					Желаемый подарок: " . $answer6 ."\n
 					Клиент: " . $name ."\n
-					Телефон: " . $phone
+					Телефон: " . $phone, $headers
 				); 	
 				$_SESSION['win'] = 1;
 				$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в мебельный магазин «Ладья». Мы ответим Вам в&#160;ближайшее время.</p>';
